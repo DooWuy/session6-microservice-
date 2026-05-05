@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: medical-discovery-server
+
+eureka:
+  client:
+    # Server không t? ??ng ký chính mình
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    # T?t self-preservation ?? Server c?p nh?t tr?ng thái các service nhanh h?n
+    enable-self-preservation: false
